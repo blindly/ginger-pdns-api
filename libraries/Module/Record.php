@@ -5,10 +5,10 @@ class Module_Record extends Module
 	private $_validationRules = array(
 		"domain_id"			=>	"required|checkIfDomainIdExists",
 		"name"				=>	"required|checkIfDomainNameIsFree",
-		"type"				=>	"required|contains,SOA A NS MX CNAME AAAA TXT SPF",
+		"type"				=>	"required|contains,SOA A NS MX CNAME AAAA TXT SPF PTR",
 		"content"			=>	"required",
 		"ttl"				=>	"required|numeric",
-		"change_date"		=>	"required|numeric",
+		"change_date"			=>	"required|numeric",
 		"prio"				=>	"numeric"
 
 	);
